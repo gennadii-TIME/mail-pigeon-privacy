@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Mail Pigeon</title>
+  <meta name="description" content="Privacy Policy for Mail Pigeon (macOS). Local processing, no email content, no analytics. App Store ready.">
+  <link rel="canonical" href="https://github.com/gennadii-TIME/mail-pigeon-privacy/blob/main/PRIVACY.md">
+  <style>
+    :root {
+      --ink: #1a2332;
+      --muted: #5a6578;
+      --line: #d5dbe6;
+      --paper: #f7f9fc;
+      --band: #e8eef6;
+      --accent: #2f5d8c;
+      --max: 42rem;
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: light; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        radial-gradient(120% 80% at 10% -10%, #dfe8f4 0%, transparent 55%),
+        radial-gradient(90% 60% at 100% 0%, #eef2f8 0%, transparent 45%),
+        var(--paper);
+    }
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+      padding: 3rem 0 4.5rem;
+    }
+    header {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      margin: 0 0 0.65rem;
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    h1 {
+      margin: 0 0 0.55rem;
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      font-size: clamp(1.7rem, 4vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .meta {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .summary {
+      margin: 1.5rem 0 1.75rem;
+      padding: 1.05rem 1.2rem;
+      background: var(--band);
+      border-left: 3px solid var(--accent);
+    }
+    .summary p { margin: 0 0 0.55rem; }
+    .summary ul { margin: 0; padding-left: 1.2rem; }
+    .summary li { margin: 0.2rem 0; }
+    h2 {
+      margin: 1.85rem 0 0.55rem;
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      font-size: 1.12rem;
+      font-weight: 700;
+    }
+    p { margin: 0 0 0.85rem; }
+    ul { margin: 0 0 0.85rem; padding-left: 1.25rem; }
+    li { margin: 0.28rem 0; }
+    a { color: var(--accent); text-underline-offset: 0.12em; }
+    a:hover { color: #1f4468; }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.9em;
+      background: #eef2f7;
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.1rem;
+      border-top: 1px solid var(--line);
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    footer p { margin: 0.3rem 0; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <p class="brand">Mail Pigeon</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective 29 September 2026 · Last updated 29 September 2026 · Bundle ID <code>com.mailpigeon.mac</code></p>
+    </header>
+
+    <section class="summary" aria-label="Summary">
+      <p><strong>Short version:</strong> Mail Pigeon works on your Mac. It does not read email content, does not use analytics or ads, and does not upload your messages to our servers.</p>
+      <ul>
+        <li>No email passwords or message bodies</li>
+        <li>Only the numeric unread count from Apple Mail (with your permission)</li>
+        <li>Preferences stored locally; purchases via Apple StoreKit</li>
+      </ul>
+    </section>
+
+    <h2>Who we are</h2>
+    <p>Mail Pigeon is developed by Gennadii Stepanov. Privacy contact: <a href="mailto:gennadiistepanov@gmail.com">gennadiistepanov@gmail.com</a>.</p>
+
+    <h2>Apple Mail unread count (Automation)</h2>
+    <p>With your permission in <strong>System Settings → Privacy &amp; Security → Automation → Mail Pigeon → Mail</strong>, the app may send Apple Events to Apple Mail (<code>com.apple.mail</code>) to read the combined <strong>unread message count</strong>. That number is used only to detect new mail and play a local delivery animation. Message content is not inspected. You can revoke access in System Settings.</p>
+
+    <h2>Local preferences</h2>
+    <p>Non-sensitive preferences (sound, volume, launch at login, character, migration flags) are stored locally with UserDefaults. They are not synced to developer servers — the app has no such backend.</p>
+
+    <h2>Purchases (StoreKit / App Store)</h2>
+    <p>Lifetime unlock and Restore Purchases are handled by <strong>Apple</strong> through StoreKit 2 / the App Store. The app only learns whether you own the lifetime product (<code>com.mailpigeon.mac.lifetime</code>). Network access is for App Store / StoreKit connectivity, not for uploading mail.</p>
+
+    <h2>We do not collect</h2>
+    <ul>
+      <li>Email credentials or message content</li>
+      <li>Contacts, calendars, photos, microphone, camera, or precise location</li>
+      <li>Advertising identifiers, analytics, or developer-operated crash telemetry</li>
+    </ul>
+
+    <h2>Sharing, retention, and children</h2>
+    <p>We do not sell personal data or share it for advertising. Local preferences stay on your Mac until you clear the app’s stored preferences. Uninstalling the app may not remove macOS preferences automatically. Purchase records are maintained by Apple. The app is a general-audience utility and is not directed at children under 13.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Grant or revoke Automation for Mail in System Settings</li>
+      <li>Change sound and launch-at-login in the app menu</li>
+      <li>Restore purchases via the App Store / in-app Restore Purchases</li>
+      <li>Uninstall the app to stop local processing</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>We may update this Privacy Policy when the app’s behavior changes. The “Last updated” date above will change. This page is the Privacy Policy URL for App Store Connect.</p>
+
+    <h2>Contact</h2>
+    <p><strong>Gennadii Stepanov</strong> — <a href="mailto:gennadiistepanov@gmail.com">gennadiistepanov@gmail.com</a><br>
+    Repository: <a href="https://github.com/gennadii-TIME/mail-pigeon-privacy">github.com/gennadii-TIME/mail-pigeon-mac</a></p>
+
+    <footer>
+      <p>Mail Pigeon for macOS · Privacy Policy (English) for App Store Connect</p>
+      <p><a href="https://github.com/gennadii-TIME/mail-pigeon-privacy/blob/main/PRIVACY.md">PRIVACY.md</a> · <a href="https://github.com/gennadii-TIME/mail-pigeon-privacy/blob/main/docs/APP_STORE_PRIVACY.md">App Store notes</a></p>
+    </footer>
+  </main>
+</body>
+</html>
